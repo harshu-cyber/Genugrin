@@ -74,13 +74,6 @@ const Navbar = () => {
               <ShieldCheck className="w-3.5 h-3.5" />
               <span>Quality Assured Formulations</span>
             </span>
-            <span className="text-gray-400">|</span>
-            <Link
-              to="/admin/login"
-              className="text-gray-300 hover:text-white transition-colors text-[11px] underline underline-offset-2"
-            >
-              Staff Portal
-            </Link>
           </div>
         </div>
       </div>
@@ -195,16 +188,6 @@ const Navbar = () => {
             <div className="text-xs text-gray-500 pt-2 px-1 space-y-1">
               <p>Email: {settings.email}</p>
               <p>Phone: {settings.phone}</p>
-            </div>
-            <div className="pt-2 border-t border-gray-100">
-              <Link
-                to="/admin/login"
-                onClick={() => setMobileMenuOpen(false)}
-                className="w-full flex items-center justify-center space-x-2 py-2 px-4 bg-gray-100 hover:bg-gray-200 text-[#17324D] text-sm font-semibold rounded-md transition-colors"
-              >
-                <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                <span>Staff Portal / Admin Login</span>
-              </Link>
             </div>
           </div>
         </div>
