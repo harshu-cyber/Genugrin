@@ -196,6 +196,16 @@ const Navbar = () => {
               <p>Email: {settings.email}</p>
               <p>Phone: {settings.phone}</p>
             </div>
+            <div className="pt-2 border-t border-gray-100">
+              <Link
+                to="/admin/login"
+                onClick={() => setMobileMenuOpen(false)}
+                className="w-full flex items-center justify-center space-x-2 py-2 px-4 bg-gray-100 hover:bg-gray-200 text-[#17324D] text-sm font-semibold rounded-md transition-colors"
+              >
+                <ShieldCheck className="w-4 h-4 text-emerald-600" />
+                <span>Staff Portal / Admin Login</span>
+              </Link>
+            </div>
           </div>
         </div>
       )}
