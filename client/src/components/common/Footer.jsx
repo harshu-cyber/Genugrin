@@ -187,21 +187,11 @@ const Footer = () => {
 
       {/* Copyright & Developer Credits */}
       <div className="bg-[#0b1724] py-5 px-4 text-xs text-gray-400 border-t border-gray-800">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
-          <div className="flex flex-col sm:flex-row items-center gap-3 text-center sm:text-left">
-            <p>
-              © {new Date().getFullYear()} <strong className="text-gray-200">GENUGRIN HEALTHCARE</strong>. All
-              Rights Reserved.
-            </p>
-            <span className="hidden sm:inline text-gray-600">•</span>
-            <Link
-              to="/admin/login"
-              className="inline-flex items-center space-x-1.5 text-gray-300 hover:text-emerald-400 font-medium transition-colors py-1 px-3 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-[11px]"
-            >
-              <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-              <span>Staff Portal Login</span>
-            </Link>
-          </div>
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-3">
+          <p>
+            © {new Date().getFullYear()} <strong className="text-gray-200">GENUGRIN HEALTHCARE</strong>. All
+            Rights Reserved.
+          </p>
           <div className="flex items-center space-x-2 text-gray-300">
             <span>Crafted with precision by</span>
             <span className="font-semibold text-emerald-400 tracking-wide">
