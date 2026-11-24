@@ -5,7 +5,6 @@ import {
   Pill,
   Layers,
   Inbox,
-  FileEdit,
   Building,
   UserCheck,
   LogOut,
@@ -46,7 +45,6 @@ const AdminLayout = () => {
     { name: 'Product Catalogue', path: '/admin/products', icon: Pill },
     { name: 'Therapeutic Segments', path: '/admin/categories', icon: Layers },
     { name: 'Enquiry Management', path: '/admin/enquiries', icon: Inbox },
-    { name: 'Website Content (CMS)', path: '/admin/content', icon: FileEdit },
     { name: 'Company Profile', path: '/admin/settings', icon: Building },
     { name: 'Security & Profile', path: '/admin/profile', icon: UserCheck },
   ];

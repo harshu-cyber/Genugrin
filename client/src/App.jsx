@@ -23,7 +23,6 @@ import ProductsList from './admin/ProductsList';
 import ProductForm from './admin/ProductForm';
 import CategoriesList from './admin/CategoriesList';
 import EnquiriesList from './admin/EnquiriesList';
-import ContentManagement from './admin/ContentManagement';
 import CompanySettings from './admin/CompanySettings';
 import ProfileSettings from './admin/ProfileSettings';
 
@@ -56,7 +55,6 @@ function App() {
         <Route path="products/edit/:id" element={<ProductForm />} />
         <Route path="categories" element={<CategoriesList />} />
         <Route path="enquiries" element={<EnquiriesList />} />
-        <Route path="content" element={<ContentManagement />} />
         <Route path="settings" element={<CompanySettings />} />
         <Route path="profile" element={<ProfileSettings />} />
       </Route>
