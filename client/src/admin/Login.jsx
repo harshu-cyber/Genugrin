@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { useNavigate, Navigate, Link } from 'react-router-dom';
-import { ShieldCheck, Lock, Mail, AlertCircle, Loader2, ArrowLeft } from 'lucide-react';
+import { useNavigate, Navigate } from 'react-router-dom';
+import { ShieldCheck, Lock, Mail, AlertCircle, Loader2 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
 const Login = () => {
@@ -43,18 +43,7 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#F5F8F6] flex flex-col justify-center py-10 sm:px-6 lg:px-8">
-      {/* Back to Website Button */}
-      <div className="sm:mx-auto sm:w-full sm:max-w-md px-4 mb-3">
-        <Link
-          to="/"
-          className="inline-flex items-center space-x-2 text-xs font-semibold text-gray-600 hover:text-[#147D55] transition-all py-1.5 px-3 rounded-lg bg-white shadow-sm border border-gray-200/80 hover:border-[#147D55]/40"
-        >
-          <ArrowLeft className="w-4 h-4 text-[#147D55]" />
-          <span>← Back to Main Website</span>
-        </Link>
-      </div>
-
+    <div className="min-h-screen bg-[#F5F8F6] flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md text-center space-y-2">
         {/* Official Brand Logo */}
         <div className="inline-block bg-white p-3.5 rounded-xl shadow-sm border border-gray-200">
@@ -138,15 +127,8 @@ const Login = () => {
             </div>
           </form>
 
-          <div className="pt-3 flex flex-col items-center justify-center space-y-2.5 text-xs text-gray-400 border-t border-gray-100">
-            <Link
-              to="/"
-              className="inline-flex items-center space-x-1.5 text-xs text-gray-600 hover:text-[#147D55] font-medium transition-colors"
-            >
-              <ArrowLeft className="w-3.5 h-3.5" />
-              <span>Return to Public Website</span>
-            </Link>
-            <p className="text-[11px]">Developed with precision by Brajwasi's Coders</p>
+          <div className="pt-2 text-center text-xs text-gray-400 border-t border-gray-100">
+            <p>Developed with precision by Brajwasi's Coders</p>
           </div>
         </div>
       </div>
